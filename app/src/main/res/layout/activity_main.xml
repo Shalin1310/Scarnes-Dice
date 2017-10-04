@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shalin.myapplication.MainActivity">
+
+    <TextView
+        android:id="@+id/yourscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Score :"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="22dp" />
+
+    <TextView
+        android:id="@+id/dis_yourscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/yourscore"
+        />
+
+    <TextView
+        android:id="@+id/computerscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Computer Score :"
+        android:layout_toRightOf="@id/dis_yourscore"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="5dp"
+        />
+
+    <TextView
+        android:id="@+id/dis_computerscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/computerscore"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:text="0"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dice1"
+        android:layout_marginLeft="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/computerscore"
+        />
+
+    <Button
+        android:layout_marginTop="15dp"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/imageView"
+        android:id="@+id/roll"
+        android:layout_marginLeft="25dp"
+        android:text="ROLL"/>
+
+    <Button
+        android:layout_marginTop="15dp"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/imageView"
+        android:id="@+id/hold"
+        android:layout_toRightOf="@id/roll"
+        android:layout_marginLeft="25dp"
+        android:text="HOLD"/>
+
+    <Button
+        android:layout_marginTop="15dp"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@id/hold"
+        android:layout_below="@id/imageView"
+        android:id="@+id/reset"
+        android:layout_marginLeft="25dp"
+        android:text="RESET"/>
+
+    <TextView
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/roll"
+        android:id="@+id/current_score_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your current score="/>
+
+    <TextView
+        android:layout_below="@id/roll"
+        android:layout_toRightOf="@id/current_score_user"
+        android:id="@+id/dis_current_score_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"/>
+
+    <TextView
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/current_score_user"
+        android:id="@+id/current_score_computer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Computer current score="/>
+
+    <TextView
+        android:layout_below="@id/current_score_user"
+        android:layout_toRightOf="@id/current_score_computer"
+        android:id="@+id/dis_current_score_computer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"/>
+
+</RelativeLayout>
